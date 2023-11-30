@@ -1,7 +1,9 @@
+import homepage from "./homepage.js"
+
 function router() {
   switch (window.location.hash) {
     case "":
-      $("main").html("<h1>Start</h1><h2>Work in progress...</h2>")
+      $("main").html(homepage())
       break
 
     case "#sida2":
@@ -16,5 +18,6 @@ function router() {
       $("main").html("<h1>Sidan finns inte</h1>")
   }
 }
+
 window.onload = router()
 window.onhashchange = router
