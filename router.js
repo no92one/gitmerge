@@ -1,4 +1,5 @@
 import page2 from "./page2.js"
+import page3 from "./page3.js"
 import homepage from "./homepage.js"
 
 function router() {
@@ -12,7 +13,7 @@ function router() {
       break
 
     case "#sida3":
-      $("main").html("<h1>Sida 3</h1><h2>Work in progress...</h2>")
+      $("main").html(page3())
       break
 
     default:
