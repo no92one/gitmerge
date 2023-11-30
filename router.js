@@ -1,3 +1,5 @@
+import page2 from "./page2.js"
+
 function router() {
   switch (window.location.hash) {
     case "":
@@ -5,7 +7,7 @@ function router() {
       break
 
     case "#sida2":
-      $("main").html("<h1>Sida 2</h1><h2>Work in progress...</h2>")
+      $("main").html(page2())
       break
 
     case "#sida3":
